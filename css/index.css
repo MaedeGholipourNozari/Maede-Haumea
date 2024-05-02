@@ -156,6 +156,106 @@ text-align: center;
 }
 
 
+/* Style for the form */
+#message_section h2{
+  text-align: center;
+}
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style for form submit button */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the messages section */
+#messages {
+  margin-top: 20px;
+}
+
+/* Style for message list */
+#messages ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style for each message entry */
+#messages ul li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for remove and edit buttons */
+li button {
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+li button.edit {
+  background-color: #007bff;
+  margin-left: 5px;
+}
+
+li button:hover {
+  background-color: #c82333;
+}
+
+li button.edit:hover {
+  background-color: #0056b3;
+}
+
+/* Style for form submit button */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
    
 /* Tablet Styles */
 @media screen and (max-width: 1000px) {
