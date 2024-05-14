@@ -85,3 +85,36 @@ messageForm.addEventListener("submit",(event)=>{
     messageForm.reset();
 });
 
+
+
+
+fetch("https://api.github.com/users/MaedeGholipourNozari/repos")
+.then(Response => Response.json())
+.then(data => {
+
+const repositories=data;
+
+const projectSection= document.querySelector("#Projects");
+
+const projectList= projectSection.querySelector(".project-list");
+
+repositories.forEach(item => {
+
+    const project=document.createElement("li");
+    project.innerHTML=item.name;
+
+    projectList.appendChild(project);
+})
+
+})
+.catch(error => {
+    // Handle any errors that occur during the fetch call
+    console.error('Error fetching data:', error);
+  });
+
+
+  
+
+
+
+  
