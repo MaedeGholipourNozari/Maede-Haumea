@@ -2,30 +2,28 @@
 
 let body=document.body;
 
-let footer=document.createElement("footer");
+ 
 
-body.appendChild(footer);
+const today = new Date();
+const thisYear = today.getFullYear();
 
-const today=new Date();
-const thisYear=today.getFullYear();
+const myFooter = document.querySelector("footer .container");
 
-const myFooter= document.querySelector("footer");
+const copyright = document.createElement('p');
+copyright.innerHTML = `&copy; Maede Gholipour ${thisYear}`;
 
-const copyright=document.createElement('p');
-copyright.innerHTML=`&copy; Maede Gholipour   ${thisYear}`;
-
-myFooter.appendChild(copyright)
+myFooter.appendChild(copyright);
 
 
 
 const skills=["JavaScript", "HTML", "CSS", "C# in .NET", "GitHub","ASP.NET Core","Bootstrap","jQuery"];
 
-const skillsSection=document.querySelector("#Skills")
-const skillsList=skillsSection.querySelector("ul");
+const skillsSection=document.querySelector("#skills")
+const skillsList=skillsSection.querySelector(".skills-list");
 
 
 skills.forEach(item => {
-    const skill=document.createElement("li");
+    const skill=document.createElement("div");
     skill.innerHTML=item;
     skillsList.appendChild(skill);
 })
@@ -54,7 +52,7 @@ messageForm.addEventListener("submit",(event)=>{
     messageSection.style.display = 'block';
 
     const newMessage=document.createElement("li");
-    newMessage.innerHTML=`<a href="mailto:${userEmail}">${userName}</a>: 
+    newMessage.innerHTML=`<a href="mailto:${userEmail}">${userName}</a> :  
     <span>${userMessage}</span>`;
 
     const removeButton = document.createElement('button');
@@ -94,13 +92,13 @@ fetch("https://api.github.com/users/MaedeGholipourNozari/repos")
 
 const repositories=data;
 
-const projectSection= document.querySelector("#Projects");
+const projectSection= document.querySelector("#projects");
 
 const projectList= projectSection.querySelector(".project-list");
 
 repositories.forEach(item => {
 
-    const project=document.createElement("li");
+    const project=document.createElement("div");
     project.innerHTML=item.name;
 
     projectList.appendChild(project);
@@ -113,6 +111,24 @@ repositories.forEach(item => {
   });
 
 
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* Navigation Menu   */
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.navigation').classList.toggle('active');
+    document.querySelector('.menu-toggle').style.display = 'none';
+    document.querySelector('.close-menu').style.display = 'block';
+
+});
+
+document.querySelector('.close-menu').addEventListener('click', function() {
+    document.querySelector('.navigation').classList.remove('active');
+    document.querySelector('.menu-toggle').style.display = 'block';
+    document.querySelector('.close-menu').style.display = 'none';
+
+});
   
 
 

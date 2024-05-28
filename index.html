@@ -1,145 +1,138 @@
-<!DOCTYPE html>
-
+<!DOCTYPE html> 
 <html>
-    <head> 
+    <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Maede Gholipour">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <title>
             My First Haumea Website
         </title>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css">
         <script src="js/index.js" defer></script>
     </head>
     <body>
-
-        <header>Maede Gholipour Nozari</header>
-        <main>
-          <aside>
-            <ul class="container">
-                <li><a href="#About">About</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Experience">Experience</a></li>
-                <li><a href="#Content">Content</a></li>
-                <li class="search-li">
-                    <input type="text" class="search-input" placeholder="Search">
-                </li>
-            </ul>
-          </aside>
-          <div class="content">
-            <section id="About" class="columns">
-                <div class="column">
-                    <img src="/Images/061191(1402.02.24).jpg"  alt="My Picture" width="150px" height="150px"> 
-            
-                </div>
-                <div class="column">
-                    <h2>About</h2>
-                    <p>I am a Web Developer.</p>
-                    <p>
-                        .NET full-stack Developer with 7+ years of extensive experience in building front and back-end applications using Microsoft technologies
-                    </p>
-                </div>
+        <header>  
+            <div class="menu-toggle">&#9776;</div> <!-- Hamburger menu icon -->
+            <div class="close-menu">&times;</div> <!-- Close menu button -->
+        
+            <div class="container container-nav">
                
-            </section> 
-            <section id="Skills"  >
-                 
-                <h2>Skills</h2>
-                <ul class="experience-list">
-                   
-                </ul> 
-            </section> 
-            <section id="Projects"  >
-                 
-                <h2>Projects</h2>
-                <ul class="project-list">
+                <nav class="navigation-bar">
                     
-                  </ul>
-            </section> 
-            <section id="Experience">
-                <h2>Experience</h2>
+                    <ul class="navigation">
+                        <li><a href="#About" class="current-page">About</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Experience">Experience</a></li>
+                        <li><a href="#Content">Content</a></li>
+                    </ul>
+                     </nav>
+            </div>
             
-            <div class="Exprience-Columns">
-                <div class="Exprience-Column">
-                    <h4>Back-End Developer at Jadoo Fekr</h4>
-                </div>
-                <div class="Exprience-Column">
-                   <p>2018-2023</p> 
+        </header>
+        <main role="main">
+        <section id="about">
+            <div class="container container-about">
+                <h2 class="about_heading section-heading">About</h2>
+                <img src="/Images/061191(1402.02.24).jpg"  alt="My Picture"  > 
+            
+                <p>
+                    Fully committed to the philosophy of life-long learning, I’m a full stack developer with a deep passion for JavaScript, React and all things web development.
+                     The unique combination of creativity, logic, technology and never running out of new things to discover, drives my excitement and passion for web development.
+                      When I’m not at my computer I like to spend my time reading, keeping fit and playing guitar.
+                    .NET full-stack Developer with 7+ years of extensive experience in building front and back-end applications using Microsoft technologies
+                </p>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <h2 class="skills_heading section-heading">Skills</h2>
+                <div class="skills-list">
+                   
+                </div> 
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <h2 class="skills_heading section-heading ">Projects</h2>
+                <div class="project-list">
+                    
                 </div>
             </div>
-            <div class="Exprience-Columns">
-                <div class="Exprience-Column">
-                    <h4>Back-End Developer at Jadoo Fekr</h4>
+        </section>
+        <section id="experiment">
+            <div class="container">
+                <h2 class="experiment_heading section-heading">Experience</h2>
+            
+                <div class="Exprience-Columns">
+                    <div class="Exprience-Column">
+                        <h4>Back-End Developer at Jadoo Fekr</h4>
+                    </div>
+                    <div class="Exprience-Column">
+                       <p>2018-2023</p> 
+                    </div>
                 </div>
-                <div class="Exprience-Column">
-                   <p>2018-2023</p> 
+                <div class="Exprience-Columns">
+                    <div class="Exprience-Column">
+                        <h4>Back-End Developer at Jadoo Fekr</h4>
+                    </div>
+                    <div class="Exprience-Column">
+                       <p>2018-2023</p> 
+                    </div>
                 </div>
+                <div class="Exprience-Columns">
+                    <div class="Exprience-Column">
+                        <h4>Back-End Developer at Jadoo Fekr</h4>
+                    </div>
+                    <div class="Exprience-Column">
+                       <p>2018-2023</p> 
+                    </div>
+                </div> 
             </div>
-            <div class="Exprience-Columns">
-                <div class="Exprience-Column">
-                    <h4>Back-End Developer at Jadoo Fekr</h4>
-                </div>
-                <div class="Exprience-Column">
-                   <p>2018-2023</p> 
-                </div>
-            </div> 
-            
-           
-            </section>
-            
-             
-            <section id="Content">
-                <div class="Footer-Content">
-                    <div class="Footer-Item">
-                        <h3>Item 1</h3>
-                        <span>Magna fringilla urna porttitor rhoncus dolor purus. Malesuada bibendum arcu vitae elementum. Purus sit amet volutpat consequat.</span>
-                    </div>
-                    <div class="Footer-Item">
-                        <h3>Item 2</h3>
-                        <span>Magna fringilla urna porttitor rhoncus dolor purus. Malesuada bibendum arcu vitae elementum. Purus sit amet volutpat consequat.</span>
-                    </div>
-                    <div class="Footer-Item">
-                        <h3>Item 3</h3>
-                        <span>Magna fringilla urna porttitor rhoncus dolor purus. Malesuada bibendum arcu vitae elementum. Purus sit amet volutpat consequat.</span>
-                    </div>
-                </div>
-               
-            </section> 
-            <section id="Connect"> 
-                <ul class="connect-links">
-                    <li><a href="mailto:maedegholipour@gmail.com">Email</a></li>
-                    <li><a href="https://github.com/MaedeGholipourNozari">GitHub</a></li> 
-                    <li><a href="https://www.linkedin.com/in/maede-gholipour-nozari-533a90166/">Linkedin</a></li> 
-                </ul>
-            </section> 
-            <section id="message_section" >
-                <h2>Leave a Message</h2>
-                <form name="leave_message">
-                    <label for="usersName">usersName :</label>
-            <input type="text" name="usersName" required >
-            <br>
-            <label for="usersEmail">Email :</label>
-            <input type="email" name="usersEmail" required >
-            <br>
-            <label for="usersMessage">Message :</label>
-            <textarea name="usersMessage"></textarea>
-            <br>
-            <button type="submit">Submit</button>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2 class="experiment_heading section-heading">Contact</h2>
+                <form class="contact-form" name="leave_message">
+                     <input class="form-input" type="text" name="usersName" required placeholder="Name">
+                    
+                     <input class="form-input" type="email" name="usersEmail" required placeholder="Email">
+                    
+                    <textarea class="form-input input-message" name="usersMessage" placeholder="Message"></textarea>
+                    
+                    <button class="form-submit" type="submit">Submit</button>
                 </form>
-            </section>
-            <section id="messages">
-                <h2>Messages</h2>
-                <ul>
+            
+                <section id="messages">
+                    <h2>Messages</h2>
+                    <ul>
 
-                </ul>
-            </section>
-        </div>
-
+                    </ul>
+                </section>
+            </div>
+        </section>
         </main>
-       
-
-
       
-       
+        <footer>
+            
+            <div class="container">
+                <div class="up-arrow" onclick="scrollToTop()">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <title>Up</title>
+                        <path fill="#fafafa" d="M17.707 10.293l-5-5c-0.391-0.391-1.024-0.391-1.414 0l-5 5c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4.293-4.293 4.293 4.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414zM17.707 17.293l-5-5c-0.391-0.391-1.024-0.391-1.414 0l-5 5c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4.293-4.293 4.293 4.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"></path>
+                    </svg>
+                </div>
+                <div class="socialmedia">
+                    <a href="https://github.com/MaedeGholipourNozari" target="_blank">
+                        <img src="images/github.png" alt="GitHub">
+                    </a>
+                    <a href="mailto:maedegholipour@gmail.com">
+                        <img src="images/message.png" alt="Email">
+                    </a>
+                </div> 
+            </div>
+        </footer>
     </body>
 </html>
